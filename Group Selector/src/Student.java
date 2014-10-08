@@ -1,16 +1,17 @@
-import java.util.Collections;
 
 public class Student
 	{
 		String firstName;
 		String lastName;
 		Double score;
+		int group;
 		
-		public Student (String fn, String ln, Double s)
+		public Student (String fn, String ln, Double s,int g)
 			{
 				firstName=fn;
 				lastName=ln;
 				score=s;
+				group=g;
 			}
 		public String getFirstName()
 			{
@@ -25,6 +26,11 @@ public class Student
 		public Double getScore()
 			{
 			return score;
+			}
+		
+		public int getGroup()
+			{
+			return group;
 			}
 
 		public void setFirstName(String firstName)
@@ -41,14 +47,10 @@ public class Student
 			{
 			this.score = score;
 			}
-		public String toString()
+		
+		public void setGroup(int group)
 			{
-			return "Student [firstName=" + firstName + ", lastName=" + lastName
-					+ ", score=" + score + ", getFirstName()=" + getFirstName()
-					+ ", getLastName()=" + getLastName() + ", getScore()="
-					+ getScore() + ", getClass()=" + getClass()
-					+ ", hashCode()=" + hashCode() + ", toString()="
-					+ super.toString() + "]";
+			this.group = group;
 			}
 
 //	create a Student Constructor
